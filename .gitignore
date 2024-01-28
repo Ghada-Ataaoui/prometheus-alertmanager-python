@@ -1,0 +1,12 @@
+*.exe
+
+prometheus/console_libraries
+prometheus/consoles
+prometheus/data
+prometheus/LICENSE
+prometheus/NOTICE
+
+
+alertmanager/data
+alertmanager/LICENSE
+alertmanager/NOTICE

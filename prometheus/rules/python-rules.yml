@@ -1,0 +1,20 @@
+groups:
+  - name: python app
+    rules:
+      - alert: HighRequestLatency
+        expr: rate(python_request_latency_seconds_sum[1m])/rate(python_request_latency_seconds_count[1m]) > 1
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: High request latency
+          description: "python app request latency is {{ $value }}s (more than 1s)."
+
+      - alert: down
+        expr: up{job="python app"} == 0
+        for: 15s
+        labels:
+          severity: critical
+        annotations:
+          summary: python app is down
+          description: "python app has been down for more than 15 seconds."

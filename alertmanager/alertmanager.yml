@@ -1,0 +1,16 @@
+route:
+  receiver: "admin"
+  repeat_interval: 30s
+  group_wait: 15s
+  group_interval: 15s
+
+receivers:
+  - name: "admin"
+    email_configs:
+      - smarthost: "smtp.gmail.com:587"
+        auth_username: "rayenmail123@gmail.com"
+        auth_password: "phvj mgug prpi sctq"
+        from: "rayenmail123@gmail.com"
+        to: "rayen.alleya@supcom.tn"
+        headers:
+          subject: "Prometheus Mail Alerts"

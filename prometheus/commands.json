@@ -1,0 +1,4 @@
+{
+    "get requests rate" : "irate(python_http_requests_total[5m])",
+    "get latency avg" : "rate(python_request_latency_seconds_sum[5m])/rate(python_request_latency_seconds_count[5m])"
+}
