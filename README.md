@@ -50,8 +50,8 @@ A complete monitoring solution demonstrating how to monitor a Python web applica
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Ghada-Ataaoui/monitoring-app-python.git
-   cd monitoring-app-python
+   git clone https://github.com/Ghada-Ataaoui/prometheus-alertmanager-python.git
+   cd prometheus-alertmanager-python
    ```
 
 2. **Install Python dependencies**
